@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;400;600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/bcf7712443.js" crossorigin="anonymous"></script>
 </head>
 <style>
     .loginText > h1{
@@ -19,7 +20,6 @@
         font-family: 'Roboto', sans-serif;
     }
 
-   
   
 </style>
 <body>
@@ -42,12 +42,24 @@ viewBox="0 0 48 48">
         <h2 class="email text-center relative before:absolute before:top-5 before:w-[25%] before:h-[0.5px] lg:before:w-[30%] md:before:w-[30%]  before:bg-gray-300 before:left-0 after:absolute after:top-5 after:w-[25%] lg:after:w-[30%] md:after:w-[30%] after:h-[0.5px] after:bg-gray-300 after:right-0 pt-2"><a href="" class="text-gray-400">or Login with Email</a></h2>
     </div>
 
-    <div class="w-[93%] h-[100px] bg-white mt-2 ml-4 email-field">
+    <div class="w-[93%] h-[90px] bg-white mt-2 ml-4 email-field">
         <h2>Email</h2>
-        <input type="email" id="email" placeholder="E.g heismyke@gmail.com" class="w-[100%] h-[50px] pl-3 border border-gray-300 rounded-lg mt-2">
-       <h1 id="Error2" class="text-red-600 pt-1"></h1>
-        <button type="submit" id="validate">Submit</button>
+        <input type="email" id="email" placeholder="E.g heismyke@gmail.com" class="w-[100%] h-[50px] pl-3 border border-gray-300 rounded-lg mt-2 ">
+        <h1 id="Error2" class="text-red-600"></h1>
+       
     </div>
+    <div class="w-[93%] h-[80px] bg-white  ml-4 password-field ">
+        <h2>Password</h2>
+        
+        <div class="w-[100%] h-[50px] bg-red-200 flex border  relative border-gray-300 rounded-lg mt-2">
+            <div class="w-[10%] h-[48px] absolute right-0 bg-none rounded-r-lg flex justify-center items-center">
+                <i class="fa-regular fa-eye cursor-pointer text-gray-400" id="eye"></i>
+            </div>
+            <input type="password" id="password" placeholder="Enter your password" class="w-[100%] h-[48px] pl-3 rounded-lg ">
+       
+        </div>
+    </div>
+    <button type="submit" id="validate" class="bg-blue-600 ml-4 mt-3 rounded-lg text-white w-[93%] h-[50px]">Login</button>
     </div>
 
     <script src="index.js"></script>

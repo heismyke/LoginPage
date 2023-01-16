@@ -1298,6 +1298,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .md\:h-\[600px\] {
     height: 600px;
   }
@@ -1336,6 +1340,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .lg\:h-\[600px\] {
     height: 600px;
   }

@@ -28,14 +28,14 @@ function hide(){
     const passWord = document.getElementById('password');
     passWord.setAttribute('type', 'password');
 }
-var pwShown = 0;
+var pwShown = false;
 document.getElementById('eye').addEventListener('click',() => {
-    if (pwShown == 0) {
-        pwShown = 1;
+    if (pwShown == false) {
+        pwShown = true;
         show();
     } 
     else{
-        pwShown = 0;
+        pwShown = false;
         hide();
     }
 });
